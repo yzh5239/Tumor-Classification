@@ -12,7 +12,7 @@ Data Source: [Tumor dataset](https://archive.ics.uci.edu/ml/datasets/primary+tum
 $python main.py --method --pca_flag
 ```
 
-`--method`: `sup` supervised: random forest; `unsup` unsupervised clustering: kmeans
+`--method`: `sup` supervised: random forest. `unsup` unsupervised clustering: kmeans
 
 
-`--pca_flag': `y` apply pca; `n` don't apply pca
+`--pca_flag': `y` apply pca. `n` don't apply pca
