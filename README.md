@@ -8,6 +8,6 @@ Data Source: [Tumor dataset](https://archive.ics.uci.edu/ml/datasets/primary+tum
 
 
 ## How to run:
-```python
+```
 $python main.py --method --pca_flag
 ```
