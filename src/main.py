@@ -15,10 +15,12 @@ print('Reading completed')
 method = sys.argv[1]
 
 if(method == 'sup'):
-    rf = random_forest(data,label,50)
-    rf.fit()
-    rf.predict()
-    
+    rf = random_forest(data,label,100)
+    res = 0
+    for epoch in range(5):    
+        rf.fit(cross_valid=epoch)
+        res += rf.predict(cross_valid=epoch)
+    print("Test Accuracy:", res/5)
 elif(method == 'unsup'):
     km = kmeans(data,label)
     km.predict()

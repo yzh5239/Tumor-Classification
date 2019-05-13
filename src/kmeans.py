@@ -36,4 +36,3 @@ class kmeans:
         pred[pred==9] = 4
         
         print("Test Accuracy:",metrics.accuracy_score(pred, self.label))
-        print(pred[pred!= self.label])
