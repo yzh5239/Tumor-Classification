@@ -18,12 +18,12 @@ def read_data(data_path, pca = 100):
                 row = row.split(',')
                 data.append(row[1:])
         data = np.array(data).astype('float32')
-        '''
+        
         #PCA to reduce dimension
         pca = PCA(n_components=pca)
         pca.fit(data)
         data = pca.fit_transform(data)
-        '''
+        
     return data 
 
 def read_label(label_path):
